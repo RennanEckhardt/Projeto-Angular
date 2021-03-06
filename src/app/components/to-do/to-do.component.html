@@ -1,0 +1,16 @@
+<div class="container">
+    <mat-accordion> 
+        <button mat-button color="accent" routerLink="/" >Voltar</button>     
+        <mat-expansion-panel *ngFor="let todo of todos">
+          <mat-expansion-panel-header>
+            <mat-panel-title >
+                {{todo.userId}}-{{todo.id}}
+            </mat-panel-title>
+            <mat-panel-description>
+              {{todo.title}}
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          {{todo.completed}}
+        </mat-expansion-panel>
+      </mat-accordion>
+  </div>

@@ -1,0 +1,16 @@
+<div class="container">
+  <mat-accordion class="read">
+    <button mat-button color="accent" routerLink="/" >Voltar</button>
+      <mat-expansion-panel *ngFor="let albun of albuns">
+        <mat-expansion-panel-header>
+          <mat-panel-title >
+              {{albun.id}}
+          </mat-panel-title>
+          <mat-panel-description>
+            {{albun.userId}}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        {{albun.title}}
+      </mat-expansion-panel>
+    </mat-accordion>
+</div>

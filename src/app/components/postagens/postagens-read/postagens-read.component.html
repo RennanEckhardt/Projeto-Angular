@@ -1,0 +1,15 @@
+
+<mat-accordion class="read"  > 
+  <button mat-button color="accent" routerLink="/" >Voltar</button>     
+    <mat-expansion-panel  *ngFor="let postagem of postagens">
+      <mat-expansion-panel-header>
+        <mat-panel-title >
+            {{postagem.userId}}-{{postagem.id}}
+        </mat-panel-title>
+        <mat-panel-description>
+          {{postagem.title}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      {{postagem.body}}
+    </mat-expansion-panel>
+  </mat-accordion>
